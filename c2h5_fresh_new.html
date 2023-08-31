@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="keywords"/>
+<style type="text/css">
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left-wrapper,
+    .right-wrapper {
+      display: inline-block;
+    }
+  </style>
+<script crossorigin="anonymous" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js" type="text/javascript"></script>
+<script src="https://chemapps.stolaf.edu/jmol/jsmol/js/Jmol2.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+   Jmol.Info=[]
+    Jmol.Info.serverURL= "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php"
+    jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
+  </script>
+</head>
+<body>
+<div class="container">
+<div class="left-wrapper">
+<table border="1" class="dataframe"><thead><tr style="text-align: right;"><th></th><th>smiles_format</th><th>xyz_file</th><th>Molecule</th><th>pubchem_status</th><th>cid</th><th>similarity</th></tr></thead><tbody><tr><th>0</th><td>[CH2]C</td><td><a href="#" onclick="jmolScript('load structure/c7h6_aggregates_ag_a_002_b_005_002_selected_result_006_000_ag_a_002_b_005.xyz');">c7h6_aggregates_ag_a_002_b_005_002_selected_result_006_000_ag_a_002_b_005.xyz</a></td><td style="text-align: center;"><img alt="Mol" data-content="rdkit/molecule" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAAABmJLR0QA/wD/AP+gvaeTAAACaElEQVR4nO3VsW0CAQxA0ZCGHRiAAegYCRo2oqRjBNa5NZwuZXKR8oOC3qtd2NKXvJmZN/ht789egNckLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiIhLBLCIiEsEsIiISwSwiKxKqyZOZ1O2+32eDwuy1LvxCuYFR6Px+f85XL5YvJ2uz3xFmr7/X5NMDPjFZLYzMy3QzNzPp+v1+vhcLjf77vd7g82419bFRb8lFdIQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRFQlgkhEVCWCSERUJYJIRF4gNy3YavHEppogAAAFt6VFh0cmRraXRQS0wgcmRraXQgMjAyMi4wMy41AAB4nHu/b+09BiDgZYAARiBmgtINjGwKG0B8ZkY2hgSQIDM3UEKEQVwJqgIMgMod9gNVq0C4DvZA9hIQSwwA1KQIyZEarBsAAACkelRYdE1PTCByZGtpdCAyMDIyLjAzLjUAAHicfY9NCsIwEIX3c4p3gZZpikgWXeSniGgTqLF3cO/9cYJMbUWcyeJl8r55hFBrjpfHE2uZSATwn2OtxdIzM02oAn48nRNCcV4nId9TucGgE0J673QlTzrpENBwezzIPjG2zF8Cs4uDweKuQ6+QEWhlmh+QGscUd2nvfJ9T/OTXNltg+1zv+jHR9ALc3Dv74hPIsgAAADp6VFh0U01JTEVTIHJka2l0IDIwMjIuMDMuNQAAeJyLdvYwinVWqNHQNdAzN9Ux0LGG0po6cYZWBjUAe50HU6G8IWYAAAAASUVORK5CYII="/></td><td>1</td><td>6324.0</td><td>0.0</td></tr></tbody></table></div>
+<div class="right-wrapper">
+<script type="text/javascript">
+        var script="background lavander";
+        jmolApplet(600, script);
+        var molecola = localStorage.getItem("molecola");
+        if(molecola != '' && molecola != null)
+              jmolScript(molecola);
+              jmolScript("");
+      </script>
+<tr>
+<div id="load_xyz"> </div>
+</tr>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="" name="description"/>
+<meta content="" name="keywords"/>
+<style type="text/css">
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left-wrapper,
+    .right-wrapper {
+      display: inline-block;
+    }
+  </style>
+<script crossorigin="anonymous" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://chemapps.stolaf.edu/jmol/jsmol/JSmol.min.js" type="text/javascript"></script>
+<script src="https://chemapps.stolaf.edu/jmol/jsmol/js/Jmol2.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+   Jmol.Info=[]
+    Jmol.Info.serverURL= "https://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php"
+    jmolInitialize("https://chemapps.stolaf.edu/jmol/jsmol", true);
+  </script>
+</head>
+<body>
+<div class="container">
+<div class="left-wrapper">
+<table border="1" class="dataframe"><thead><tr style="text-align: right;"><th></th><th>smiles_format</th><th>xyz_file</th><th>Molecule</th><th>pubchem_status</th><th>cid</th><th>similarity</th></tr></thead><tbody><tr><th>0</th><td>[CH3]</td><td><a href="#" onclick="jmolScript('load structure/c4h7_aggregates_ag_a_001_b_003_002_selected_result_021_000_ag_a_001_b_003.xyz');">c4h7_aggregates_ag_a_001_b_003_002_selected_result_021_000_ag_a_001_b_003.xyz</a></td><td style="text-align: center;"><img alt="Mol" data-content="rdkit/molecule" src="data:image/png;base64,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"/></td><td>1</td><td>297.0</td><td>0.0</td></tr></tbody></table></div>
+<div class="right-wrapper">
+<script type="text/javascript">
+        var script="background lavander";
+        jmolApplet(600, script);
+        var molecola = localStorage.getItem("molecola");
+        if(molecola != '' && molecola != null)
+              jmolScript(molecola);
+              jmolScript("");
+      </script>
+<tr>
+<div id="load_xyz"> </div>
+</tr>
+</div>
+</div>
+</body>
+</html>
